@@ -22,6 +22,7 @@ const AllList = () => {
     setState,
     setEditDataId,
     setEditData,
+    setInputs
   } = useContext(CartContext);
 
   // EDIT FUNCTIONALITY
@@ -39,6 +40,7 @@ const AllList = () => {
     setEditData(true);
     setState("newNote");
     navigate("/newNote");
+    
   };
 
   // DELETE FUNCTIONALITY

@@ -5,7 +5,7 @@ import { useContext } from "react";
 import "./Footer.css";
 const Footer = () => {
   const navigate = useNavigate();
-  const { state, setState } = useContext(CartContext);
+  const { state, setState, setInputs } = useContext(CartContext);
 
   const newNote = () => {
     setState("newNote");
@@ -14,10 +14,12 @@ const Footer = () => {
   const homePage = () => {
     setState("home");
     navigate("/");
+    setInputs("");
   };
   const allList = () => {
     setState("category");
     navigate("/allList");
+    setInputs("");
   };
   return (
     <div className="footer">

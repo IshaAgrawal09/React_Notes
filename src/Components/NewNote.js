@@ -26,6 +26,7 @@ const NewNote = () => {
     setEditData,
     editDataId,
     setNewId,
+    setInputs,
   } = useContext(CartContext);
 
   const [error, setError] = useState("");
@@ -77,6 +78,7 @@ const NewNote = () => {
       setCategoryAdd("null");
       setState("category");
       navigate("/AllList");
+      setInputs("");
     }
   };
   console.log(dataArr);

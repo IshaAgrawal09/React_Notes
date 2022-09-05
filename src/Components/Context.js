@@ -29,6 +29,7 @@ export function CartProvider({ children }) {
   const [description, setDescription] = useState("");
   const [content, setContent] = useState("");
 
+  const [removeId, setRemoveId] = useState();
   const [newId, setNewId] = useState();
 
   const search = (event) => {
@@ -85,6 +86,8 @@ export function CartProvider({ children }) {
         setSearchList,
         newId,
         setNewId,
+        removeId,
+        setRemoveId,
       }}
     >
       {children}
