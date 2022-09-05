@@ -12,7 +12,7 @@ const ShowSearch = () => {
   const back = () => {
     navigate("/");
     setState("home");
-    setInputs("");  
+    setInputs("");
   };
   return (
     <div className="showSearchMain">
@@ -22,63 +22,51 @@ const ShowSearch = () => {
           <i className="fa-solid fa-arrow-left"></i>BACK
         </button>
       </div>
-      <div className="showSearch">
-        {searchList.map((item, index) => {
-          return (
-            <div
-              className="singleList"
-              id={
-                `${item.category}` === "Weekend"
-                  ? "weekend"
-                  : `${item.category}` === "Family"
-                  ? "family"
-                  : `${item.category}` === "Work"
-                  ? "work"
-                  : `${item.category}` === "Groceries"
-                  ? "groceries"
-                  : `${item.category}` === "Car"
-                  ? "car"
-                  : `${item.category}` === "Home"
-                  ? "home"
-                  : null
-              }
-            >
-              <div className="firstFlex">
+      {searchList.length === 0 ? (
+        <h4 id="sorry">Sorry, No Matches found!</h4>
+      ) : (
+        <div className="showSearch">
+          {searchList.map((item, index) => {
+            return (
+              <div
+                className="singleList"
+                id={
+                  `${item.category}` === "Weekend"
+                    ? "weekend"
+                    : `${item.category}` === "Family"
+                    ? "family"
+                    : `${item.category}` === "Work"
+                    ? "work"
+                    : `${item.category}` === "Groceries"
+                    ? "groceries"
+                    : `${item.category}` === "Car"
+                    ? "car"
+                    : `${item.category}` === "Home"
+                    ? "home"
+                    : null
+                }
+              >
+                <div className="firstFlex">
+                  <div>
+                    <h4>
+                      {item.subject}&nbsp;({item.category})
+                    </h4>
+                  </div>
+                </div>
+                <div className="firstFlex">
+                  <div>
+                    <p>{item.description}</p>
+                  </div>
+                  <div className="date">{item.date}</div>
+                </div>
                 <div>
-                  <h4>
-                    {item.subject}&nbsp;({item.category})
-                  </h4>
-                </div>
-                <div className="firstIcon">
-                  {/* <div>
-                    <i
-                      className="fa-solid fa-pencil edit"
-                      id={item.id}
-                      // onClick={editNotesFunc}
-                    ></i>
-                  </div> */}
-                  {/* <div>
-                    <i
-                      className="fa-solid fa-trash-can trash"
-                      id={index}
-                      // onClick={deleteNote}
-                    ></i>
-                  </div> */}
+                  <p className="date">{item.content}</p>
                 </div>
               </div>
-              <div className="firstFlex">
-                <div>
-                  <p>{item.description}</p>
-                </div>
-                <div className="date">{item.date}</div>
-              </div>
-              <div>
-                <p className="date">{item.content}</p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      )}
       <Footer />
     </div>
   );

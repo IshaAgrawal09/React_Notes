@@ -16,7 +16,7 @@ const ShowCategory = () => {
   };
   const back = () => {
     navigate("/");
-    setState("home"); 
+    setState("home");
   };
   return (
     <div className="showMain">
@@ -49,6 +49,7 @@ const ShowCategory = () => {
         </div>
         {selectList.length == 0 ? (
           <p id="newAdd">
+            <span id="singlCat">No Notes Available</span> <br /><br />
             Please Write some notes under <span id="singlCat">{category}</span>
             &nbsp;&nbsp;
             <span id="newAddIcon" onClick={goToNew}>
