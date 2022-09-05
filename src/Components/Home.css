@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.home {
+  padding: 4% 2%;
+}
+.homeDiv {
+  margin: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fontyy {
+  text-align: center;
+  font-family: "DynaPuff", cursive;
+}
+.fontyy h3 {
+  margin: 2% 0;
+  font-weight: 500;
+}
+.left {
+  margin-right: 10%;
+}
+.size {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px #808080;
+  font-family: "Dancing Script", cursive;
+  font-family: "DynaPuff", cursive;
+}
+#Groceries {
+  background-color: #f8e781;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  transform: rotate(-10deg);
+}
+#Work {
+  background-color: #7deb74;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  transform: rotate(10deg);
+}
+#Car {
+  background-color: #b498f0;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  transform: rotate(-10deg);
+}
+#Family {
+  background-color: #fb9c31;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  transform: rotate(-10deg);
+}
+#Home {
+  background-color: #81cff8;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  transform: rotate(10deg);
+}
+#Weekend {
+  background-color: #ff7b6a;
+  -ms-transform: rotate(-10deg); /* IE 9 */
+  transform: rotate(-10deg);
+}

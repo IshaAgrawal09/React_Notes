@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.show {
+  /* border: 1px solid black; */
+  margin: 4%;
+}
+.showMainCategory {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px #808080;
+  font-family: "Dancing Script", cursive;
+  font-family: "DynaPuff", cursive;
+}
+#groceriesCat {
+  background-color: #f8e781;
+}
+#workCat {
+  background-color: #7deb74;
+}
+#carCat {
+  background-color: #b498f0;
+}
+#familyCat {
+  background-color: #fb9c31;
+}
+#homeCat {
+  background-color: #81cff8;
+}
+#weekendCat {
+  background-color: #ff7b6a;
+}
+.singleShow {
+  /* border: 1px solid red; */
+  margin: 5% 0;
+}
+.singleShow .firstFlex {
+  justify-content: space-between;
+  display: flex;
+}
+.singleShow div {
+  margin: 2% 0;
+}
+.date {
+  color: #808080;
+  font-size: 15px;
+}
+.singleList div {
+  margin: 2% 0;
+}
+#newAdd{
+  margin: 4% 0;
+}
+#singlCat {
+  font-family: "Dancing Script", cursive;
+  font-family: "DynaPuff", cursive;
+}
+#newAddIcon{
+  font-size: 19px;
+  cursor: pointer;
+  color: rgb(196, 160, 61);
+}

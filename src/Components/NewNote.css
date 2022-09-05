@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.newNote {
+  margin: 3% 2%;
+  padding: 3%;
+}
+.singleNote {
+  margin: 8% auto;
+  width: 90%;
+  display: flex;
+}
+
+.noteData {
+  color: #808080;
+  width: 30%;
+}
+.noteInput {
+  width: 70%;
+}
+.noteInput input,
+.noteInput select {
+  background-color: #fff;
+  width: 100%;
+  padding: 2%;
+  border: none;
+  border-bottom: 1px solid #808080;
+}
+.noteInput input:focus {
+  outline: none;
+}
+.noteInput select:focus {
+  outline: none;
+}
+#gray {
+  color: gray;
+  font-weight: 500;
+}
+textarea {
+  border: 0.5px solid #808080;
+  padding: 2%;
+  border-radius: 4px;
+}
+textarea:focus {
+  outline: none;
+}
+
+.singleNote button {
+  margin-left: auto;
+  background-color: #1a3c40;
+  padding: 2.4% 5%;
+  border: none;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.list {
+  margin: 4% 2%;
+  padding: 2%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+.singleList {
+  margin: 4% 0;
+  padding: 2%;
+  border-radius: 7px;
+}
+.firstIcon {
+  width: 12%;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.firstIcon div{
+  margin-right: 14% !important;
+}
+.trash{
+  cursor: pointer;
+  color: rgb(216, 10, 10);
+}
+.edit{
+  cursor: pointer;
+  color: purple;
+}
+#home {
+  background-color: #dcf2fd;
+}
+#weekend {
+  background-color: #fce5e3;
+}
+#family {
+  background-color: #fdefe0;
+}
+#groceries {
+  background-color: #f8f3d6;
+}
+#work {
+  background-color: #edffeb;
+}
+#car {
+  background-color: #ede6ff;
+}
+.singleList .firstFlex {
+  justify-content: space-between;
+  display: flex;
+}
+.date {
+  color: #808080;
+  font-size: 15px;
+}
+.singleList div {
+  margin: 2% 0;
+}
+#line {
+  width: 95%;
+  margin: auto;
+  border: 1px solid #808080;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #eee;
+  /* border: 2px solid #000; */
+  padding: 4%;
+  border-radius: 7px;
+  text-align: center;
+}
+.modal:focus{
+  outline: none;
+}
+.modal button{
+  margin: 4% 0 2%;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 2% 3%;
+  cursor: pointer;
+}
+

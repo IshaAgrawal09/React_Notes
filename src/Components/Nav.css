@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  border-radius: 5px 5px 0 0;
+  background-color: #1D5C63;
+  padding: 3% 1%;
+  color: #EDE6DB;
+  text-align: center;
+}
+.nav .header {
+  margin: 2% 0;
+}
+.header h3 {
+  font-family: "Dancing Script", cursive;
+}
+.header h3 #mainN {
+  font-size: 32px;
+}
+.SearchBar{
+    /* border: 1px solid black; */
+    margin-top:3% ;
+}
+.SearchBar input{
+    padding: 1.5% 7%;
+    width: 80%;
+    margin: auto;
+    border-radius: 7px;
+    border: none;
+}
+.SearchBar input:focus{
+    outline: none;
+}
+.SearchBar form{
+    /* border: 1px solid red; */
+    position: relative ;
+}
+.SearchBar form i{
+    position: absolute;
+    color: #808080;
+    top: 20%;
+    left: 11%;
+}
